@@ -11,17 +11,22 @@
 
 **querySelectorAll:** is used to return a collection of an element's child elements that match a specified CSS selector(s), as a static **NodeList object**. The NodeList object represents a collection of nodes. The nodes can be accessed by index numbers.
 
+
 2. How do you **create and insert a new element into the DOM**?
 
 **Ans.**
 **createElement** — create a new element. **e.g.** const newEle = document.createElement("p");
+
 **createTextNode** — create any needed content. **e.g.** newEle..innerText = "I am a new Element.";
+
 **appendChild** — attach the new text node to the element. **e.g.** getElementById("main-container").appendChild(newEle);
+
 
 3. What is **Event Bubbling** and how does it work?
 
 **Ans.**
 Event bubbling is a phase in the event propagation process where an event starts from the target element (the element that triggered the event) and bubbles up through the DOM tree to its ancestors (parent elements).
+
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
@@ -31,6 +36,7 @@ Event delegation refers to the process of using event propagation (bubbling) to 
 **Efficiency:** Event delegation reduces the number of event listeners, improving memory usage and performance, especially when dealing with a large number of elements.
 
 **Dynamic elements:** It works seamlessly with dynamically added or removed child elements, as the common ancestor continues to listen for events on them.
+
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
